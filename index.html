@@ -12,13 +12,27 @@
 
         <main>
 
-            <section>
+            <section id="mail">
 
                 <label for="email">Inserisci il tuo indirizzo email</label>
                 <input type="email" name="email" id="userInput" placeholder="email" required>
                 <button class="btn" onclick="whitelist()">Invia</button>
                 <p id="result"></p>
-                
+
+            </section>
+
+            <section id="dadi">
+
+                <p>Premi il bottone qui sotto per lanciare il dado, in numero più alto vince!</p>
+                <button onclick="userInput()">Lancia il dado</button>
+
+                <div class="dadi">
+                    <h3 id="utente">Il tuo numero è: </h3>
+                    <h3 id="cpu">Il numero del tuo avversario è: </h3>
+                </div>
+
+                <h2 id="risultato"></h2>
+
             </section>
 
 
